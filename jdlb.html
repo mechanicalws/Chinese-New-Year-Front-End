@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>春节-景点列表</title>
+		<link rel="stylesheet" href="./layout.css">
+	</head>
+	<style>
+		 .container {
+		             display: flex;
+		             flex-direction: column;
+		             width: 1000px;
+		             height: 955px;
+					 border: 3px solid #cccccc;
+		         }
+		         .item {
+		             display: flex;
+		             align-items: center;
+		             justify-content: space-between;
+		             padding: 20px;
+		             box-sizing: border-box;
+					 border-bottom: 2px solid #cccccc;
+		         }
+		         .image {
+		             width: 180px;
+		             height: 150px;
+		         }
+		        .text {
+					font-family: "SimSun"; /* 设置字体为宋体 */
+					font-size: 16px; /* 设置字体大小为16px */
+					line-height: 25px; /* 设置行高为25px */
+					letter-spacing: 2px; /* 设置字间距为2px */
+		            margin-left: 20px;
+		        }
+				.banner img{
+					height: 460px;
+				}
+	</style>
+	<body>
+		<div class="lay" style="background-color: #fafafa;">
+			<div class="top">
+				<div class="signdiv" style="margin-left: 20px;">
+					<img src="images/user.png" width="35px" height="35px" style="margin-top: 12px;" onclick="start()">
+	
+				</div>
+	
+				<div class="login-container" id="signform" style="display: none">
+					<button class="close-button" onclick="closeLogin()">×</button>
+					<h2>登录</h2>
+					<div class="form-group">
+						<label for="username">用户名</label>
+						<input type="text" id="username" placeholder="请输入用户名">
+					</div>
+					<div class="form-group">
+						<label for="password">密码</label>
+						<input type="password" id="password" placeholder="请输入密码">
+					</div>
+					<button class="login-button" type="submit">登录</button>
+				</div>
+	
+				<div class="search-container">
+					<input type="text" class="search-input" placeholder="搜索...">
+					<button class="search-button" type="submit">搜索</button>
+				</div>
+	
+	
+				<div class="webnav">
+					<ul>
+						<li class="licur"><a href="index.html" title="网站首页">网站首页</a></li>
+						<li><a href="jdlb.html" title="景点列表">景点列表</a></li>
+						<li><a href="jdxc.html" title="春节小吃">春节小吃</a></li>
+						<li><a href="lygl.html" title="春节习俗">春节习俗</a></li>
+						<li><a href="spxs.html" title="视频欣赏">视频欣赏</a></li>
+						<li><a href="wenda.html" title="问答百科">问答百科</a></li>
+					</ul>
+				</div>
+				<div style="clear:both"></div>
+			</div>
+			<div class="banner">
+				<img src="./images/b2.webp"  />
+			</div>
+			<div class="container">
+			        <div class="item" style="">
+			            <img class="image" src="./images/gggg.webp" alt="Image 1" >
+			            <div class="text" >广东的春节又称为“年例”，是广东省及周边地区民间最隆重、最热闹的传统节日。春节在广东的地位非常重要，人们会提前一个月开始准备，
+						家家户户都会进行大扫除，购买年货，张贴春联，挂灯笼，放鞭炮等，以迎接新的一年的到来。</div>
+			        </div>
+			        <div class="item">
+			            <img class="image" src="./images/jtd.webp" alt="Image 1" >
+			            <div class="text" >新疆的春节庆祝活动丰富多样，具有浓厚的地方特色。虽然春节的日期在内地是农历新年的初一，但在新疆由于部分民族信仰萨满教，因此他们有自己独特的纪年方法。
+						例如哈萨克族人民会将农历正月春分那天作为元旦来庆祝，这一天被称为"纳吾热孜"，意为辞旧迎新、元旦日。</div>
+			        </div>
+					<div class="item">
+					    <img class="image" src="./images/haerb.jpg" alt="Image 1" >
+					    <div class="text" >哈尔滨的春节庆祝活动别具一格，充满了浓厚的地方特色。在这里，你不仅可以欣赏到美丽的冰雕和雪雕，还可以体验到独特的冰雪娱乐项目
+						在这个期间，你可以在冰雪大世界、太阳岛雪博会、冰灯游园会等地方看到形态各异的冰雕作品。</div>
+					</div>
+					<div class="item">
+					    <img class="image" src="./images/jxcj.jpeg" alt="Image 1" >
+					    <div class="text" >江西的春节庆祝活动丰富多样，充满了浓厚的地方特色。在南昌，春节期间的活动别具一格，初一到初四，人们盛行踩高跷、舞龙灯等表演，这些表演者会走街串巷，市民们以鸣鞭炮的方式迎接他们的到来。
+						此外，有一些特定的食品是南昌人春节必食的，如年糕、红烧鱼、炒米粉和八宝饭。</div>
+					</div>
+					<div class="item">
+					    <img class="image" src="./images/yncj.webp" alt="Image 1" >
+					    <div class="text" >云南的春节庆祝活动丰富多彩，充满了浓厚的地方特色和多元民族文化。对于一些汉族地区，春节的传统习俗如贴对联、吃年夜饭、放鞭炮等依然被继续传承。
+						而在白族地区，除了上述习俗外，还有打醋炭、铺松针、吃长菜、甘蔗顶门、采山花、赶年街、烧烤年夜饭、跳花鼓和放天灯等丰富多彩的活动</div>
+					</div>
+					
+		</div>
+	</body>
+	<script>
+		function start() {
+		document.getElementById('signform').style.display = ""
+	};
+	function closeLogin() {
+		document.getElementById('signform').style.display = "none"
+	};
+	</script>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>春节-春节小吃</title>
+    <link
+      rel="stylesheet"
+      href="./layout.css" />
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: center;
+      }
+      table img {
+        width: 270px;
+        height: 270px;
+      }
+      p {
+        margin-top: 10px;
+      }
+      .banner img {
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lay">
+      <div class="top">
+        <div class="signdiv" style="margin-left: 20px;">
+          <img src="images/user.png" width="35px" height="35px" style="margin-top: 12px;" onclick="start()">
+  
+        </div>
+  
+        <div class="login-container" id="signform" style="display: none">
+          <button class="close-button" onclick="closeLogin()">×</button>
+          <h2>登录</h2>
+          <div class="form-group">
+            <label for="username">用户名</label>
+            <input type="text" id="username" placeholder="请输入用户名">
+          </div>
+          <div class="form-group">
+            <label for="password">密码</label>
+            <input type="password" id="password" placeholder="请输入密码">
+          </div>
+          <button class="login-button" type="submit">登录</button>
+        </div>
+  
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="搜索...">
+          <button class="search-button" type="submit">搜索</button>
+        </div>
+  
+  
+        <div class="webnav">
+          <ul>
+            <li class="licur"><a href="index.html" title="网站首页">网站首页</a></li>
+            <li><a href="jdlb.html" title="景点列表">景点列表</a></li>
+            <li><a href="jdxc.html" title="春节小吃">春节小吃</a></li>
+            <li><a href="lygl.html" title="春节习俗">春节习俗</a></li>
+            <li><a href="spxs.html" title="视频欣赏">视频欣赏</a></li>
+            <li><a href="wenda.html" title="问答百科">问答百科</a></li>
+          </ul>
+        </div>
+        <div style="clear:both"></div>
+      </div>
+      <div class="banner">
+        <img
+          src="images/b3.jpeg"
+          height="329"
+          width="1000" />
+      </div>
+      <table>
+        <tr>
+          <td>
+            <img
+              src="./images/m1.jpg"
+              alt="图片描述1" />
+            <p>饺子</p>
+          </td>
+          <td>
+            <img
+              src="./images/m2.jpeg"
+              alt="图片描述1" />
+            <p>春卷</p>
+          </td>
+          <td>
+            <img
+              src="./images/mm3.webp"
+              alt="图片描述1" />
+            <p>汤圆</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <img
+              src="./images/mm4.webp"
+              alt="图片描述1" />
+            <p>甜点</p>
+          </td>
+          <td>
+            <img
+              src="./images/mm5.webp"
+              alt="图片描述1" />
+            <p>酥饺</p>
+          </td>
+          <td>
+            <img
+              src="./images/mm6.webp"
+              alt="图片描述1" />
+            <p>糯米</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <img
+              src="./images/mm7.webp"
+              alt="图片描述1" />
+            <p>糖醋鱼</p>
+          </td>
+          <td>
+            <img
+              src="./images/mm8.jpg"
+              alt="图片描述1" />
+            <p>瓜子</p>
+          </td>
+          <td>
+            <img
+              src="./images/mm9.png"
+              alt="图片描述1" />
+            <p>糖酥</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <script>
+		function start() {
+		document.getElementById('signform').style.display = ""
+	};
+	function closeLogin() {
+		document.getElementById('signform').style.display = "none"
+	};
+	</script>
+</html>

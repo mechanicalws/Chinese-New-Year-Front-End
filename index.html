@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>CHINA</title>
+	<link rel="stylesheet" href="./layout.css">
+	<link rel="icon" href="./images/favicon.ico">
+</head>
+<style>
+	
+</style>
+
+<body>
+	<div class="lay">
+		<div class="top">
+			<div class="signdiv" style="margin-left: 20px;">
+				<img src="images/user.png" width="35px" height="35px" style="margin-top: 12px;" onclick="start()">
+
+			</div>
+
+			<div class="login-container" id="signform" style="display: none">
+				<button class="close-button" onclick="closeLogin()">×</button>
+				<h2>登录</h2>
+				<div class="form-group">
+					<label for="username">用户名</label>
+					<input type="text" id="username" placeholder="请输入用户名">
+				</div>
+				<div class="form-group">
+					<label for="password">密码</label>
+					<input type="password" id="password" placeholder="请输入密码">
+				</div>
+				<button class="login-button" type="submit">登录</button>
+			</div>
+
+			<div class="search-container">
+				<input type="text" class="search-input" placeholder="搜索...">
+				<button class="search-button" type="submit">搜索</button>
+			</div>
+
+
+			<div class="webnav">
+				<ul>
+					<li class="licur"><a href="index.html" title="网站首页">网站首页</a></li>
+					<li><a href="jdlb.html" title="景点列表">景点列表</a></li>
+					<li><a href="jdxc.html" title="春节小吃">春节小吃</a></li>
+					<li><a href="lygl.html" title="春节习俗">春节习俗</a></li>
+					<li><a href="spxs.html" title="视频欣赏">视频欣赏</a></li>
+					<li><a href="wenda.html" title="问答百科">问答百科</a></li>
+				</ul>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+
+		<video width="1000" controls autoplay style="margin-top: 10px;">
+			<source src="./images/视频.mp4" video/mp4">
+			您的浏览器不支持Video标签。
+		</video>
+		<div class="index_con">
+			<div class="left">
+				<div class="jsbox">
+					<h3 class="s1"><span class="s1">春节简介</span></h3>
+					<div class="js_con">
+						春节是中国最重要的传统节日之一，也是中国农历新年的开始。它通常在公历1月底或2月初举行，持续15天。春节是中国人团聚的时刻，人们会回家与家人共度佳节。
+						在春节期间，人们会进行一系列的庆祝活动，如贴春联、放鞭炮、舞龙舞狮等。此外，人们还会互相拜年，送上红包和祝福。
+						除了家庭聚会外，春节期间还有一些传统的庙会和花市等活动。这些活动通常会持续数天，吸引大量游客前来观看和参与。</div>
+				</div>
+
+				<div class="pic_box">
+					<h3 class="s1"><span class="s1">春节习俗</span></h3>
+
+					<div class="pic_con" id="Marquee_x">
+						<ul>
+							<li>
+								<div><a href="lygl.html" target="_blank" ">
+										<img src=" ./images/m1.webp" style="width:100px;height: 100px;" />
+									</a>
+
+								</div>
+								<div><a href="lygl.html" target="_blank">
+										<img src="./images/m2.jpg" style="width:100px;height: 100px;" />
+									</a>
+
+								</div>
+
+								<div><a href="lygl.html" target="_blank">
+										<img src="./images/m3.webp" style="width:100px;height: 100px;" />
+									</a>
+
+								</div>
+
+								<div><a href="lygl.html" target="_blank">
+										<img src="./images/m4.webp" style="width:100px;height: 100px;" />
+									</a>
+
+								</div>
+								<div><a href="lygl.html" target="_blank">
+										<img src="./images/m5.webp" style="width:100px;height: 100px;" />
+									</a>
+
+								</div>
+								<div><a href="lygl.html" target="_blank">
+										<img src="./images/m6.webp" style="width:100px;height: 100px;" />
+									</a>
+
+								</div>
+
+								<div><a href="lygl.html" target="_blank">
+										<img src="./images/m7.webp" style="width:100px;height: 100px;" />
+									</a>
+
+								</div>
+
+
+								<div><a href="lygl.html" target="_blank">
+										<img src="./images/m8.webp" style="width:100px;height: 100px;" />
+									</a>
+
+								</div>
+								<div><a href="lygl.html" target="_blank">
+										<img src="./images/m9.webp" style="width:100px;height: 100px;" />
+									</a>
+
+								</div>
+
+								<div><a href="lygl.html" target="_blank">
+										<img src="./images/m10.webp" style="width:100px;height: 100px;" />
+									</a>
+
+								</div>
+
+
+								<div><a href="lygl.html" target="_blank">
+										<img src="https://baidu.com" />
+									</a>
+
+								</div>
+
+
+
+							</li>
+						</ul>
+					</div>
+
+
+				</div>
+
+			</div>
+
+
+			<div class="right">
+				<div class="lb_box">
+					<h3 class="s2"><span class="s2">今日推荐</span></h3>
+					<div class="lb_con">
+						<img id="lunbo_img" src="./images/tj.jpg" />
+					</div>
+				</div>
+
+				<div class="list_box" width="330px">
+					<h3 class="s2"><span class="s2">相关资讯</span></h3>
+					<div class="list_con" style="padding-top: 10px;">
+						<table border="1" width="100%">
+							<tr class="box" style="line-height: 25px;">
+								<td>
+									<div class="box">
+										<p class="content">
+											<a
+												href="https://baijiahao.baidu.com/s?id=1756320333549720072&wfr=spider&for=pc">2023年春节假期全国共发送旅客约2.26亿人次</a>
+										</p>
+									</div>
+								</td>
+								<td>2023/12/01</td>
+							</tr>
+							<tr style="line-height: 25px;">
+								<td>
+									<div class="box">
+										<p class="content">
+											<a
+												href="https://baijiahao.baidu.com/s?id=1756239487998109593&wfr=spider&for=pc">疫情防控进入新阶段后的首个春节</a>
+										</p>
+									</div>
+								</td>
+								<td>2023/12/02</td>
+							</tr>
+							<tr style="line-height: 25px;">
+								<td>
+									<div class="box">
+										<p class="content">
+											<a
+												href="http://io.ruc.edu.cn/xwzx/xwsd/5157864c9974464a8553fef1dbc9af10.htm">华人社区热烈欢庆中国新年，共享团圆盛宴</a>
+										</p>
+									</div>
+								</td>
+								<td>2023/12/03</td>
+							</tr>
+							<tr style="line-height: 25px;">
+								<td>
+									<div class="box">
+										<p class="content">
+											<a
+												href="http://yjy.people.com.cn/n1/2023/0202/c244560-32616703.html">人民网研究院发布《2023年春节消费观察报告》</a>
+
+										</p>
+									</div>
+								</td>
+
+								<td>2023/12/04</td>
+							</tr>
+							<tr style="line-height: 25px;">
+								<td>
+									<div class="box">
+										<p class="content"><a
+												href="https://www.sohu.com/a/635578656_121119000">今年春节国内长线游订单量同比增长超过500%</a>
+
+										</p>
+									</div>
+								</td>
+								<td>2023/12/05</td>
+							</tr>
+							<tr style="line-height: 25px;">
+								<td>
+									<div class="box">
+										<p class="content">
+											<a
+												href="https://tv.cctv.com/2023/01/29/VIDEZSctksqbnJsRkNKvzq0S230129.shtml">春节期间的“菜篮子”产品市场量足价稳，全国揽投快递包裹量超过7亿件</a>
+
+										</p>
+									</div>
+								</td>
+								<td>2023/12/06</td>
+							</tr>
+
+						</table>
+					</div>
+				</div>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		<div class="footer">
+			<p style="text-align: center;height: 20px;background-color: black;color: white">contact:
+				doublefive518@163.com |
+				Copyright &#169; 魏爽 like 春节</p>
+		</div>
+	</div>
+</body>
+<script>
+
+
+
+
+	var index = 1;
+	function lunbo() {
+		index++;
+		//判断index是否大于3
+		if (index > 3) {
+			index = 1;
+		}
+		if (index == 1) {
+			document.getElementById("lunbo_img").src = "./images/tj.jpg";
+		} else if (index == 2) {
+			document.getElementById("lunbo_img").src = "./images/gggg.webp";
+		} else if (index == 3) {
+			document.getElementById("lunbo_img").src = "./images/b3.jpeg";
+			//获取img对象
+
+		}
+
+	};
+	function start() {
+		document.getElementById('signform').style.display = ""
+	};
+	function closeLogin() {
+		document.getElementById('signform').style.display = "none"
+	};
+	//定义定时器
+	setInterval(lunbo, 1500);
+</script>
+
+</html>

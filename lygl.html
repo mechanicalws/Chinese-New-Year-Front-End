@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>春节-来源</title>
+    <link
+      rel="stylesheet"
+      href="./layout.css" />
+  </head>
+  <style>
+    p {
+      font-family: 'SimSun';
+      /* 设置字体为宋体 */
+      font-size: 16px;
+      /* 设置字体大小为16px */
+      line-height: 25px;
+      /* 设置行高为25px */
+      letter-spacing: 2px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 1000px;
+      height: 180px;
+      border: 2px solid #cccccc;
+    }
+
+    .container1 {
+      display: flex;
+      flex-direction: column;
+      width: 1000px;
+      height: 180px;
+      border: 2px solid #cccccc;
+    }
+
+    .banner img {
+      height: 500px;
+    }
+  </style>
+  <body>
+    <div class="lay">
+      <div class="top">
+        <div class="signdiv" style="margin-left: 20px;">
+          <img src="images/user.png" width="35px" height="35px" style="margin-top: 12px;" onclick="start()">
+  
+        </div>
+  
+        <div class="login-container" id="signform" style="display: none">
+          <button class="close-button" onclick="closeLogin()">×</button>
+          <h2>登录</h2>
+          <div class="form-group">
+            <label for="username">用户名</label>
+            <input type="text" id="username" placeholder="请输入用户名">
+          </div>
+          <div class="form-group">
+            <label for="password">密码</label>
+            <input type="password" id="password" placeholder="请输入密码">
+          </div>
+          <button class="login-button" type="submit">登录</button>
+        </div>
+  
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="搜索...">
+          <button class="search-button" type="submit">搜索</button>
+        </div>
+  
+  
+        <div class="webnav">
+          <ul>
+            <li class="licur"><a href="index.html" title="网站首页">网站首页</a></li>
+            <li><a href="jdlb.html" title="景点列表">景点列表</a></li>
+            <li><a href="jdxc.html" title="春节小吃">春节小吃</a></li>
+            <li><a href="lygl.html" title="春节习俗">春节习俗</a></li>
+            <li><a href="spxs.html" title="视频欣赏">视频欣赏</a></li>
+            <li><a href="wenda.html" title="问答百科">问答百科</a></li>
+          </ul>
+        </div>
+        <div style="clear:both"></div>
+      </div>
+      <div class="banner">
+        <img src="./images/b4.webp" />
+      </div>
+      <div class="container">
+        <p>
+          春节是中国最重要的传统节日，有着丰富多彩的习俗。以下是一些主要的春节习俗：
+          贴春联：春联是写在红纸上的对联，寓意着祝福和希望。一般在春节前，人们会把春联贴在门上或墙上。
+          放鞭炮：放鞭炮是春节的重要习俗之一，象征着辟邪驱鬼，迎接新的一年的到来。
+          守岁：守岁是指在除夕夜一家人团圆在一起，熬夜等待新年的到来。
+          吃年夜饭：年夜饭是春节最重要的一顿饭，家人会围坐在一起，共享丰盛的食物。
+          发红包：红包是装有钱的红色信封，通常由长辈给予晚辈，寓意着祝福和好运。
+          拜年：春节期间，人们会互相拜年，表达新年的祝福。
+          看春晚：春晚是中国人过春节的传统活动之一，全家人会聚在一起观看。
+          舞龙舞狮：舞龙舞狮是春节期间的一种表演，象征着吉祥和幸运。
+          穿新衣：春节期间，人们会穿上新衣，寓意着新的开始。
+          走亲访友：春节期间，人们会拜访亲朋好友，互送礼物，表达新年的祝福。
+        </p>
+      </div>
+      <div class="banner">
+        <img src="./images/b5.jpg" />
+      </div>
+      <div class="container1">
+        <p>
+          春节的由来与中国古代的殷商时期有关，当时的人们向太阳神祈求丰收和好运。每年冬至（十二月二十三日），太阳神便会在这一天出现，于是人们便将这一天定为开始迎接新的一年的节日。据记载，中国人民过春节已有4千多年的历史。
+          春节的名字也有多种解释，如“元日”、“元旦”、“无证”、“元辰”、“岁旦”等，但最常被老百姓接受的叫法是“过年”，关于“年”的名称，历史上在我国民间流传着许多有趣的传说。
+          另外，春节的起源还与上古原始信仰、祭祀文化以及星象、历法等人文与自然文化内容有关。人类最原始的两种信仰：一是天地信仰，二是祖先信仰，这两种信仰在春节的庆祝活动中都得到了体现。例如，人们在春节期间会贴春联、放鞭炮、守岁、吃年夜饭、发红包、拜年、看春晚、舞龙舞狮、穿新衣、走亲访友等，这些都是人们对于新的一年的美好祝愿和对传统文化的传承。
+        </p>
+      </div>
+    </div>
+  </body>
+  <script>
+		function start() {
+		document.getElementById('signform').style.display = ""
+	};
+	function closeLogin() {
+		document.getElementById('signform').style.display = "none"
+	};
+	</script>
+</html>
